@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infinite Voxel World</title>
+	<link rel="stylesheet" href="styles.css">
+	<script type="importmap">
+		{
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.145/build/three.module.js",
+            "PointerLockControls": "https://cdn.jsdelivr.net/npm/three@0.145.0/examples/jsm/controls/PointerLockControls.js",
+            "BufferGeometryUtils": "https://cdn.jsdelivr.net/npm/three@0.145.0/examples/jsm/utils/BufferGeometryUtils.js"
+        }
+    }
+    </script>
+</head>
+
+<body>
+	<!-- Pause menu injects via script.js, nothing to add here -->
+	<!-- Mobile on-screen controls -->
+	<div id="mobileControls">
+		<div id="joystickZone"></div>
+		<button id="jumpBtn" class="action-btn">↑</button>
+		<button id="removeBtn" class="action-btn">−</button>
+		<button id="placeBtn" class="action-btn">+</button>
+	</div>
+	<!-- Virtual joystick library for mobile controls -->
+	<script src="https://cdn.jsdelivr.net/npm/nipplejs@0.9.0/dist/nipplejs.min.js"></script>
+	<!-- Inventory UI -->
+	<div id="inventory"></div>
+	<div id="itemPickupText">Item Collected!</div>
+	<script type="module" src="script.js"></script>
+</body>
+
+</html>
